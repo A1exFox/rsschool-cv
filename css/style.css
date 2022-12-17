@@ -11,7 +11,10 @@ body {
   font-family: Kanit;
 }
 a {
-  color: inherit;
+  color: yellow;
+}
+a:hover {
+  text-decoration: underline;
 }
 .wrapper {
   max-width: 100%;
@@ -76,9 +79,6 @@ a {
   font-size: 16px;
   text-transform: uppercase;
 }
-.header__link:hover {
-  text-decoration: underline;
-}
 /* ===================================================== main */
 .main {
   flex: 1 1 auto;
@@ -137,6 +137,39 @@ a {
   line-height: 140%;
 }
 /* ======================================= education */
+.textblock__education {
+  margin: 0 50px;
+}
+.education>*:not(:last-child) {
+  margin-bottom: 20px;
+}
+.education__titleblock {}
+.education__list {
+  padding: 0 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+.education__list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.education__list li::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2D2D2D;
+  margin-right: 15px;
+  border: 5px solid #ddd;
+}
+.education__info {
+  display: inline-block;
+}
+.education__time {
+  font-weight: 800;
+}
+.education__name {}
 /* ======================================= right panel */
 .rightpanel {
   flex: 0 0 370px;
