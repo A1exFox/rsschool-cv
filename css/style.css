@@ -1,21 +1,55 @@
 /*сброс стилей по умолчанию - чтобы во всех браузерах страница выглядела одинаково*/
+/* 
+- задать ссылки в шапке
+
+*/
 @import 'reset.css';
 body {
   background: #262626;
   color: #ddd;
+  font-weight: 400;
+}
+a {
+  color: inherit;
 }
 .wrapper {
   max-width: 100%;
   min-height: 100%;
   overflow: hidden;
   display: flex;
+}
+.page {
+  width: 1200px;
+  margin: 0 auto;
+  background: #2D2D2D;
+  display: flex;
   flex-direction: column;
 }
 [class*='__container'] {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .header {}
+.header__block {
+  box-shadow: 0 10px 0 #262626;
+  border-radius: 0 0 30px 30px;
+}
+.header__menu {}
+.header__list {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__item {}
+.header__link {
+  font-family: Kanit;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.header__link:hover {
+  text-decoration: underline;
+}
 .main {
   flex: 1 1 auto;
 }
