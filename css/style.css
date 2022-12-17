@@ -1,6 +1,8 @@
 /*сброс стилей по умолчанию - чтобы во всех браузерах страница выглядела одинаково*/
 /* 
 - задать ссылки в шапке
+- задать размер картинки html
+- поменять ссылку в образовании
 - задать ширинц фотки главной
 */
 @import 'reset.css';
@@ -71,6 +73,7 @@ a:hover {
 .main__whoiam {}
 .main__columnsinfo {}
 .main__skills {}
+.main__code {}
 /* ===================================================== header */
 .header {}
 .header__menu {}
@@ -234,6 +237,62 @@ a:hover {
 }
 .skills__progress_10 {
   width: 10%;
+}
+/* ============================================ code */
+.code {}
+.code__container {}
+.code__titleblock {}
+.code_listcolors {
+  margin: 0 200px;
+  padding: 30px 0 30px 50px;
+  background: #282c34;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 140%;
+  color: #61AFEF;
+}
+.code_listcolors li {
+  counter-increment: li;
+}
+.code_listcolors li:last-child {
+  background: #2C313C;
+}
+.code_listcolors li::marker {
+  content: '' counter(li) '   ';
+  color: #495162;
+}
+.code_listcolors li:last-child::marker {
+  color: #ABB2BF;
+}
+.col__pink {
+  color: #C672C5;
+}
+.col__red {
+  color: #E06C75;
+  font-style: oblique;
+}
+.col__gray {
+  color: #ABB2BF;
+}
+.col__green {
+  color: #94B86A;
+}
+.col__orange {
+  color: #D19A5C;
+}
+.col__textprint {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: textanimation 5s steps(21, end) infinite;
+}
+@keyframes textanimation {
+  20% {
+    width: 0px;
+  }
+  60% {
+    width: 230.92px;
+  }
 }
 /* ===================================================== footer */
 .footer {}
