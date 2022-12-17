@@ -1,5 +1,22 @@
+/*сброс стилей по умолчанию - чтобы во всех браузерах страница выглядела одинаково*/
 @import 'reset.css';
 body {
   background: #262626;
   color: #ddd;
 }
+.wrapper {
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+[class*='__container'] {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {}
+.main {
+  flex: 1 1 auto;
+}
+.footer {}
