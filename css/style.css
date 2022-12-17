@@ -8,6 +8,7 @@ body {
   background: #262626;
   color: #ddd;
   font-weight: 400;
+  font-family: Kanit;
 }
 a {
   color: inherit;
@@ -26,14 +27,18 @@ a {
   flex-direction: column;
 }
 [class*='__container'] {
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
 }
-.header {}
+/* ===================================================== Блоки */
 .header__block {
   box-shadow: 0 10px 0 #262626;
   border-radius: 0 0 30px 30px;
+  margin-bottom: 50px;
 }
+.main__whoiam {}
+/* ===================================================== header */
+.header {}
 .header__menu {}
 .header__list {
   height: 110px;
@@ -43,14 +48,43 @@ a {
 }
 .header__item {}
 .header__link {
-  font-family: Kanit;
   font-size: 16px;
   text-transform: uppercase;
 }
 .header__link:hover {
   text-decoration: underline;
 }
+/* ===================================================== main */
 .main {
   flex: 1 1 auto;
 }
+.main>*:not(:last-child) {
+  margin-bottom: 50px;
+}
+/* ============================================ whoiam */
+.whoiam {}
+.whoiam__container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.whoiam__text {
+  flex: 1 1 auto;
+  text-transform: uppercase;
+}
+.whoiam__myname {
+  font-size: 52px;
+  line-height: 140%;
+}
+.whoiam__label {
+  font-size: 32px;
+  line-height: 140%;
+}
+.whoiam__image {
+  flex: 0 0 320px;
+  box-shadow: 10px 10px 0 #262626;
+  border-radius: 30px;
+  overflow: hidden;
+}
+/* ===================================================== footer */
 .footer {}
