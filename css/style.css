@@ -74,6 +74,7 @@ a:hover {
 .main__columnsinfo {}
 .main__skills {}
 .main__code {}
+.main__projects {}
 /* ===================================================== header */
 .header {}
 .header__menu {}
@@ -251,6 +252,15 @@ a:hover {
   line-height: 140%;
   color: #61AFEF;
 }
+.code_listcolors::after {
+  content: 'workbench.colorTheme: One Dark Pro';
+  position: relative;
+  bottom: -30px;
+  left: -45px;
+  font-family: Kanit;
+  font-size: 14px;
+  color: #495162;
+}
 .code_listcolors li {
   counter-increment: li;
 }
@@ -284,15 +294,42 @@ a:hover {
   display: inline-flex;
   overflow: hidden;
   white-space: nowrap;
+  background: #747474;
   animation: textanimation 5s steps(21, end) infinite;
 }
 @keyframes textanimation {
   20% {
+    background: #2C313C;
     width: 0px;
   }
   60% {
     width: 230.92px;
   }
+  100% {
+    background: #2C313C;
+  }
+}
+/* ============================================ projects */
+.projects {}
+.projects__container {}
+.projects__titleblock {}
+.projects__body {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+}
+.projects__item {
+  text-align: center;
+}
+.projects__item>*:not(:last-child) {
+  margin-bottom: 10px;
+}
+.projects__image {}
+.projects__link {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 140%;
 }
 /* ===================================================== footer */
 .footer {}
