@@ -33,10 +33,13 @@ a:hover {
   width: 1100px;
   margin: 0 auto;
 }
-/* ===================================================== Блоки */
+/* ===================================================== Общие Блоки */
 /* ============================================= Заголовок */
 .titleblock {
   display: flex;
+}
+.titleblock:not(:last-child) {
+  margin-bottom: 20px;
 }
 .titleblock__text {
   font-size: 36px;
@@ -64,7 +67,10 @@ a:hover {
   border-radius: 0 0 30px 30px;
   margin-bottom: 50px;
 }
+/* ===================================================== Уникальные блоки */
 .main__whoiam {}
+.main__columnsinfo {}
+.main__skills {}
 /* ===================================================== header */
 .header {}
 .header__menu {}
@@ -112,7 +118,6 @@ a:hover {
   overflow: hidden;
 }
 /* ============================================ columnsinfo */
-.main__columnsinfo {}
 .columnsinfo {
   display: flex;
 }
@@ -126,9 +131,6 @@ a:hover {
 .textblock__aboutme {
   margin: 0 50px;
 }
-.aboutme>*:not(:last-child) {
-  margin-bottom: 20px;
-}
 .aboutme__titleblock {}
 .aboutme__text {
   padding: 0 20px;
@@ -139,9 +141,6 @@ a:hover {
 /* ======================================= education */
 .textblock__education {
   margin: 0 50px;
-}
-.education>*:not(:last-child) {
-  margin-bottom: 20px;
 }
 .education__titleblock {}
 .education__list {
@@ -186,5 +185,55 @@ a:hover {
 }
 .rightpanel__up {}
 .rightpanel__down {}
+/* ============================================ skills */
+.skills {}
+.skills__container {}
+.skills__titleblock {}
+.skills__list {
+  padding: 0 200px;
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  height: 50px;
+}
+.skills__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.skills__image {
+  flex: 0 0 50px;
+}
+.skills__image img {
+  max-width: 100%;
+}
+.skills__progressbar {
+  flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #262626;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.skills__progress {
+  background: #ddd;
+  height: 100%;
+}
+.skills__progress_70 {
+  width: 70%;
+}
+.skills__progress_50 {
+  width: 50%;
+}
+.skills__progress_30 {
+  width: 30%;
+}
+.skills__progress_20 {
+  width: 20%;
+}
+.skills__progress_10 {
+  width: 10%;
+}
 /* ===================================================== footer */
 .footer {}
