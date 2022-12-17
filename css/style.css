@@ -65,6 +65,7 @@ a:hover {
   background: linear-gradient(90deg, #dddddd 0%, #ffffff00 100%);
 }
 .header__block {
+  background: #393939;
   box-shadow: 0 10px 0 #262626;
   border-radius: 0 0 30px 30px;
   margin-bottom: 50px;
@@ -93,7 +94,7 @@ a:hover {
 .main {
   flex: 1 1 auto;
 }
-.main>*:not(:last-child) {
+.main>* {
   margin-bottom: 50px;
 }
 /* ============================================ whoiam */
@@ -333,3 +334,23 @@ a:hover {
 }
 /* ===================================================== footer */
 .footer {}
+.footer__block {
+  /* box-shadow: 0 10px 0 #262626; */
+  border-radius: 30px 30px 0 0;
+  background: #393939;
+}
+.footer__container {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__github img {
+  height: 50px;
+}
+.footer__year {
+  font-size: 24px;
+}
+.footer__rsschool img {
+  height: 50px;
+}
