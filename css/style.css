@@ -1,18 +1,14 @@
 /*сброс стилей по умолчанию - чтобы во всех браузерах страница выглядела одинаково*/
-/* 
-- задать размер картинки html
-- поменять ссылку в образовании
-- задать ширинц фотки главной
+/*
 */
-@import 'reset.css';
 body {
   background: #262626;
-  color: #ddd;
+  color: #dddddd;
   font-weight: 400;
   font-family: Kanit;
 }
 a {
-  color: yellow;
+  color: #ffff00;
 }
 a:hover {
   text-decoration: underline;
@@ -60,7 +56,7 @@ a:hover {
   top: 50%;
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: #ffffff;
   background: linear-gradient(90deg, #dddddd 0%, #ffffff00 100%);
 }
 .header__block {
@@ -104,7 +100,6 @@ a:hover {
 .whoiam__container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 .whoiam__text {
   flex: 1 1 auto;
@@ -167,7 +162,7 @@ a:hover {
   border-radius: 50%;
   background: #2D2D2D;
   margin-right: 15px;
-  border: 5px solid #ddd;
+  border: 5px solid #dddddd;
 }
 .education__info {
   display: inline-block;
@@ -230,7 +225,7 @@ a:hover {
 .rpdown__level {
   flex: 0 0 40px;
   height: 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 15px;
   font-size: 16px;
   line-height: 140%;
@@ -268,13 +263,13 @@ a:hover {
   flex: 1 1 auto;
   height: 100%;
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   background: #262626;
   border-radius: 15px;
   overflow: hidden;
 }
 .skills__progress {
-  background: #ddd;
+  background: #dddddd;
   height: 100%;
 }
 .skills__progress_70 {
@@ -395,7 +390,6 @@ a:hover {
 /* ===================================================== footer */
 .footer {}
 .footer__block {
-  /* box-shadow: 0 10px 0 #262626; */
   border-radius: 30px 30px 0 0;
   background: #393939;
 }
