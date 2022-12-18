@@ -20,25 +20,25 @@
           <nav class="header__menu">
             <ul class="header__list">
               <li class="header__item">
-                <a href="#" class="header__link">about me</a>
+                <a href="#about" class="header__link">about me</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">contacts</a>
+                <a href="#contacts" class="header__link">contacts</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">skills</a>
+                <a href="#skill" class="header__link">skills</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">projects</a>
+                <a href="#project" class="header__link">projects</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">code example</a>
+                <a href="#code" class="header__link">code example</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">education</a>
+                <a href="#education" class="header__link">education</a>
               </li>
               <li class="header__item">
-                <a href="#" class="header__link">language</a>
+                <a href="#language" class="header__link">language</a>
               </li>
             </ul>
           </nav>
@@ -63,7 +63,7 @@
         <div class="main__columnsinfo columnsinfo">
           <div class="columnsinfo__textblock textblock">
             <div class="textblock__aboutme aboutme">
-              <div class="aboutme__titleblock titleblock">
+              <div class="aboutme__titleblock titleblock" id="about">
                 <h2 class="titleblock__text">about me</h2>
                 <div class="titleblock__ceil">
                   <div class="titleblock__decor"></div>
@@ -74,7 +74,7 @@
               </div>
             </div>
             <div class="textblock__education education">
-              <div class="education__titleblock titleblock">
+              <div class="education__titleblock titleblock" id="education">
                 <h2 class="titleblock__text">education</h2>
                 <div class="titleblock__ceil">
                   <div class="titleblock__decor"></div>
@@ -97,7 +97,7 @@
                       2022 - Now:
                     </div>
                     <div class="education__name">
-                      <a href="https://rs.school/">The Rolling Scopes - JavaScript/Front-end</a>
+                      <a href="https://rs.school/" target="_blank">The Rolling Scopes - JavaScript/Front-end</a>
                     </div>
                   </div>
                 </li>
@@ -106,7 +106,7 @@
           </div>
           <div class="columnsinfo__rightpanel rightpanel">
             <div class="rightpanel__up rpup">
-              <div class="rightpanel__title">contacts</div>
+              <div class="rightpanel__title" id="contacts">contacts</div>
               <div class="rightpanel__content">
                 <ul class="rpup__list">
                   <li class="rightpanel__item">
@@ -114,7 +114,7 @@
                       <img src="img/rightpanel/svg/email.svg" alt="e-mail">
                     </div>
                     <div class="rpup__link">
-                      <a href="mailto:oxoma91@gmail.com">oxoma91@gmail.com</a>
+                      <a href="mailto:oxoma91@gmail.com" target="_blank">oxoma91@gmail.com</a>
                     </div>
                   </li>
                   <li class="rightpanel__item">
@@ -130,15 +130,14 @@
                       <img src="img/rightpanel/svg/telegram.svg" alt="telegram">
                     </div>
                     <div class="rpup__link">
-                      <a href="https://t.me/oxoma91">@oxoma91</a>
+                      <a href="https://t.me/oxoma91" target="_blank">@oxoma91</a>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
-
             <div class="rightpanel__down rpdown">
-              <div class="rightpanel__title">languages</div>
+              <div class="rightpanel__title" id="language">languages</div>
               <div class="rightpanel__content">
                 <ul class="rpdown__list">
                   <li class="rightpanel__item">
@@ -156,7 +155,7 @@
         </div>
         <div class="main__skills skills">
           <div class="skills__container">
-            <div class="skills__titleblock titleblock">
+            <div class="skills__titleblock titleblock" id="skill">
               <h2 class="titleblock__text">skills</h2>
               <div class="titleblock__ceil">
                 <div class="titleblock__decor"></div>
@@ -208,7 +207,7 @@
         </div>
         <div class="main__code code">
           <div class="code__container">
-            <div class="code__titleblock titleblock">
+            <div class="code__titleblock titleblock" id="code">
               <h2 class="titleblock__text">code example</h2>
               <div class="titleblock__ceil">
                 <div class="titleblock__decor"></div>
@@ -232,25 +231,21 @@
         </div>
         <div class="main__projects projects">
           <div class="projects__container">
-            <div class="projects__titleblock titleblock">
+            <div class="projects__titleblock titleblock" id="project">
               <h2 class="titleblock__text">my project</h2>
               <div class="titleblock__ceil">
                 <div class="titleblock__decor"></div>
               </div>
             </div>
             <div class="projects__body">
-              <div class="projects__item">
-                <div class="projects__image">
-                  <a href="#"><img src="img/projects/relvise.jpg" alt="relvise"></a>
-                </div>
-                <a href="#" class="projects__link">relvise</a>
-              </div>
-              <div class="projects__item">
-                <div class="projects__image">
-                  <a href="#"><img src="img/projects/gocorona.jpg" alt="gocorona"></a>
-                </div>
-                <a href="#" class="projects__link">gocorona</a>
-              </div>
+              <a class="projects__link" href="https://github.com/A1exFox/relvise" target="_blank">
+                <img src="img/projects/relvise.jpg" alt="relvise">
+                relvise
+              </a>
+              <a class="projects__link" href="https://github.com/A1exFox/gocorona" target="_blank">
+                <img src="img/projects/gocorona.jpg" alt="gocorona">
+                gocorona
+              </a>
             </div>
           </div>
         </div>
@@ -258,11 +253,15 @@
       <footer class="footer footer__block">
         <div class="footer__container">
           <div class="footer__github">
-            <a href="https://github.com/A1exFox"><img src="img/footer/svg/github.svg" alt="github"></a>
+            <a href="https://github.com/A1exFox" target="_blank">
+              <img src="img/footer/svg/github.svg" alt="github">
+            </a>
           </div>
           <div class="footer__year">2022</div>
           <div class="footer__rsschool">
-            <a href="https://rs.school/js/"><img src="img/footer/svg/rs_school_js.svg" alt="rsschool"></a>
+            <a href="https://rs.school/js/" target="_blank">
+              <img src="img/footer/svg/rs_school_js.svg" alt="rsschool">
+            </a>
           </div>
         </div>
       </footer>

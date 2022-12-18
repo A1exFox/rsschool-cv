@@ -1,10 +1,8 @@
 /*сброс стилей по умолчанию - чтобы во всех браузерах страница выглядела одинаково*/
 /* 
-- задать ссылки в шапке
 - задать размер картинки html
 - поменять ссылку в образовании
 - задать ширинц фотки главной
-- открывать ссылки в новом окне
 */
 @import 'reset.css';
 body {
@@ -97,6 +95,9 @@ a:hover {
 }
 .main>* {
   margin-bottom: 50px;
+}
+.main>*:last-child {
+  margin-bottom: 80px;
 }
 /* ============================================ whoiam */
 .whoiam {}
@@ -371,17 +372,25 @@ a:hover {
   column-gap: 20px;
   align-items: center;
 }
-.projects__item {
-  text-align: center;
-}
-.projects__item>*:not(:last-child) {
-  margin-bottom: 10px;
-}
-.projects__image {}
 .projects__link {
+  flex: 0 0 250px;
+  height: 190px;
+  text-align: center;
   font-size: 18px;
   text-transform: uppercase;
   line-height: 140%;
+  opacity: 0.8;
+  transition: opacity 0.2s ease 0s;
+}
+.projects__link:hover {
+  opacity: 1;
+}
+.projects__link img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
 }
 /* ===================================================== footer */
 .footer {}
