@@ -1,0 +1,410 @@
+/*сброс стилей по умолчанию - чтобы во всех браузерах страница выглядела одинаково*/
+/*
+*/
+body {
+  background: #262626;
+  color: #dddddd;
+  font-weight: 400;
+  font-family: Kanit;
+}
+a {
+  color: #ffff00;
+}
+a:hover {
+  text-decoration: underline;
+}
+.wrapper {
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+.page {
+  width: 1200px;
+  margin: 0 auto;
+  background: #2D2D2D;
+  display: flex;
+  flex-direction: column;
+}
+[class*='__container'] {
+  width: 1100px;
+  margin: 0 auto;
+}
+/* ===================================================== Общие Блоки */
+/* ============================================= Заголовок */
+.titleblock {
+  display: flex;
+}
+.titleblock:not(:last-child) {
+  margin-bottom: 20px;
+}
+.titleblock__text {
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.titleblock__decor {}
+.titleblock__ceil {
+  flex: 1 1 auto;
+  position: relative;
+  margin-left: 15px;
+}
+.titleblock__decor::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  background: linear-gradient(90deg, #dddddd 0%, #ffffff00 100%);
+}
+.header__block {
+  background: #393939;
+  box-shadow: 0 10px 0 #262626;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 50px;
+}
+/* ===================================================== Уникальные блоки */
+.main__whoiam {}
+.main__columnsinfo {}
+.main__skills {}
+.main__code {}
+.main__projects {}
+/* ===================================================== header */
+.header {}
+.header__menu {}
+.header__list {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__item {}
+.header__link {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* ===================================================== main */
+.main {
+  flex: 1 1 auto;
+}
+.main>* {
+  margin-bottom: 50px;
+}
+.main>*:last-child {
+  margin-bottom: 80px;
+}
+/* ============================================ whoiam */
+.whoiam {}
+.whoiam__container {
+  display: flex;
+  align-items: center;
+}
+.whoiam__text {
+  flex: 1 1 auto;
+  text-transform: uppercase;
+}
+.whoiam__myname {
+  font-size: 52px;
+  line-height: 140%;
+}
+.whoiam__label {
+  font-size: 32px;
+  line-height: 140%;
+}
+.whoiam__image {
+  flex: 0 0 320px;
+  box-shadow: 10px 10px 0 #262626;
+  border-radius: 30px;
+  overflow: hidden;
+}
+/* ============================================ columnsinfo */
+.columnsinfo {
+  display: flex;
+}
+.columnsinfo__textblock>*:not(:last-child) {
+  margin-bottom: 50px;
+}
+.textblock {
+  flex: 1 1 auto;
+}
+/* ======================================= aboutme */
+.textblock__aboutme {
+  margin: 0 50px;
+}
+.aboutme__titleblock {}
+.aboutme__text {
+  padding: 0 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+/* ======================================= education */
+.textblock__education {
+  margin: 0 50px;
+}
+.education__titleblock {}
+.education__list {
+  padding: 0 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+.education__list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.education__list li::before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #2D2D2D;
+  margin-right: 15px;
+  border: 5px solid #dddddd;
+}
+.education__info {
+  display: inline-block;
+}
+.education__time {
+  font-weight: 800;
+}
+.education__name {}
+/* ======================================= right panel */
+.rightpanel {
+  flex: 0 0 370px;
+}
+.columnsinfo__rightpanel {
+  width: 100%;
+  background: #393939;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0 10px 0 0 #262626;
+  overflow: hidden;
+  padding: 30px;
+}
+.rightpanel__up {}
+.rightpanel__down {}
+.rightpanel__title {
+  font-size: 32px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.rightpanel__title:not(:last-child) {
+  margin-bottom: 20px;
+}
+.rightpanel__content {
+  margin-left: 15px;
+}
+.rightpanel__item {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.rightpanel__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+/* ============================= right panel up */
+.rpup {}
+.rpup__list {}
+.rpup__image {
+  flex: 0 0 40px;
+  height: 40px;
+}
+.rpup__image img {
+  width: 100%;
+  height: 100%;
+}
+.rpup__link {}
+/* ============================= right panel down */
+.rpdown {}
+.rpdown__list {}
+.rpdown__level {
+  flex: 0 0 40px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rpdown__name {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+}
+/* ============================================ skills */
+.skills {}
+.skills__container {}
+.skills__titleblock {}
+.skills__list {
+  padding: 0 200px;
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  height: 50px;
+}
+.skills__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.skills__image {
+  flex: 0 0 50px;
+}
+.skills__image img {
+  max-width: 100%;
+}
+.skills__progressbar {
+  flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #dddddd;
+  background: #262626;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.skills__progress {
+  background: #dddddd;
+  height: 100%;
+}
+.skills__progress_70 {
+  width: 70%;
+}
+.skills__progress_50 {
+  width: 50%;
+}
+.skills__progress_30 {
+  width: 30%;
+}
+.skills__progress_20 {
+  width: 20%;
+}
+.skills__progress_10 {
+  width: 10%;
+}
+/* ============================================ code */
+.code {}
+.code__container {}
+.code__titleblock {}
+.code_listcolors {
+  margin: 0 200px;
+  padding: 30px 0 30px 50px;
+  background: #282c34;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 140%;
+  color: #61AFEF;
+}
+.code_listcolors::after {
+  content: 'colorTheme: One Dark Pro';
+  position: relative;
+  bottom: -30px;
+  left: -45px;
+  font-family: Kanit;
+  font-size: 14px;
+  color: #495162;
+}
+.code_listcolors li {
+  counter-increment: li;
+}
+.code_listcolors li:last-child {
+  background: #2C313C;
+}
+.code_listcolors li::marker {
+  content: '' counter(li) '   ';
+  color: #495162;
+}
+.code_listcolors li:last-child::marker {
+  color: #ABB2BF;
+}
+.col__pink {
+  color: #C672C5;
+}
+.col__red {
+  color: #E06C75;
+  font-style: oblique;
+}
+.col__gray {
+  color: #ABB2BF;
+}
+.col__green {
+  color: #94B86A;
+}
+.col__orange {
+  color: #D19A5C;
+}
+.col__textprint {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+  background: #747474;
+  animation: textanimation 5s steps(21, end) infinite;
+}
+@keyframes textanimation {
+  20% {
+    background: #2C313C;
+    width: 0px;
+  }
+  60% {
+    width: 230.92px;
+  }
+  100% {
+    background: #2C313C;
+  }
+}
+/* ============================================ projects */
+.projects {}
+.projects__container {}
+.projects__titleblock {}
+.projects__body {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  align-items: center;
+}
+.projects__link {
+  flex: 0 0 250px;
+  height: 190px;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 140%;
+  opacity: 0.8;
+  transition: opacity 0.2s ease 0s;
+}
+.projects__link:hover {
+  opacity: 1;
+}
+.projects__link img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+}
+/* ===================================================== footer */
+.footer {}
+.footer__block {
+  border-radius: 30px 30px 0 0;
+  background: #393939;
+}
+.footer__container {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__github img {
+  height: 50px;
+}
+.footer__year {
+  font-size: 24px;
+}
+.footer__rsschool img {
+  height: 50px;
+}
