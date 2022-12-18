@@ -5,12 +5,269 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CV - A1exFox</title>
 </head>
 
 <body>
-  <h1>Hello</h1>
+  <div class="wrapper">
+    <div class="page">
+      <header class="header header__block">
+        <div class="header__container">
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#about">about me</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#contacts">contacts</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#skill">skills</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#project">projects</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#code">code example</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#education">education</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#language">language</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__whoiam whoiam">
+          <div class="whoiam__container">
+            <div class="whoiam__text">
+              <h1 class="whoiam__myname">
+                alexandr fox
+              </h1>
+              <div class="whoiam__label">
+                Beginner front end developer
+              </div>
+            </div>
+            <div class="whoiam__image">
+              <img src="img/whoiam/myphoto.jpg" alt="Photo" width="320" height="395">
+            </div>
+          </div>
+        </div>
+        <div class="main__columnsinfo columnsinfo">
+          <div class="columnsinfo__textblock textblock">
+            <div class="textblock__aboutme aboutme">
+              <div class="aboutme__titleblock titleblock" id="about">
+                <h2 class="titleblock__text">about me</h2>
+                <div class="titleblock__ceil">
+                  <div class="titleblock__decor"></div>
+                </div>
+              </div>
+              <div class="aboutme__text">
+                Hello, my name is Alexander. I did layout at school, when it was still mostly tabular. I even managed to construct a semblance of an online bookstore - with a basket and all sorts of chips in ancient JS (it would be interesting to look at this miracle now). Today I am starting my education anew, but for now I am just an ordinary employee of an ordinary company without career growth and salary growth, and this is very boring. This is what prompted me to become interested in cutting-edge developments again. I hope everything works out. Amen
+              </div>
+            </div>
+            <div class="textblock__education education">
+              <div class="education__titleblock titleblock" id="education">
+                <h2 class="titleblock__text">education</h2>
+                <div class="titleblock__ceil">
+                  <div class="titleblock__decor"></div>
+                </div>
+              </div>
+              <ul class="education__list">
+                <li class="education__item">
+                  <div class="education__info">
+                    <div class="education__time">
+                      2009 - 2014:
+                    </div>
+                    <div class="education__name">
+                      College of Economics of Law and Informatics
+                    </div>
+                  </div>
+                </li>
+                <li class="education__item">
+                  <div class="education__info">
+                    <div class="education__time">
+                      2022 - Now:
+                    </div>
+                    <div class="education__name">
+                      <a href="https://rs.school/" target="_blank">The Rolling Scopes - JavaScript/Front-end</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="columnsinfo__rightpanel rightpanel">
+            <div class="rightpanel__up rpup">
+              <div class="rightpanel__title" id="contacts">contacts</div>
+              <div class="rightpanel__content">
+                <ul class="rpup__list">
+                  <li class="rightpanel__item">
+                    <div class="rpup__image">
+                      <img src="img/rightpanel/svg/email.svg" alt="e-mail" width="40" height="40">
+                    </div>
+                    <div class="rpup__link">
+                      <a href="mailto:oxoma91@gmail.com" target="_blank">oxoma91@gmail.com</a>
+                    </div>
+                  </li>
+                  <li class="rightpanel__item">
+                    <div class="rpup__image">
+                      <img src="img/rightpanel/svg/discord.svg" alt="discord" width="40" height="40">
+                    </div>
+                    <div class="rpup__link">
+                      <a href="https://discordapp.com/users/490937602304770069" target="_blank">AlexFox#7209</a>
+                    </div>
+                  </li>
+                  <li class="rightpanel__item">
+                    <div class="rpup__image">
+                      <img src="img/rightpanel/svg/telegram.svg" alt="telegram" width="40" height="40">
+                    </div>
+                    <div class="rpup__link">
+                      <a href="https://t.me/oxoma91" target="_blank">@oxoma91</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="rightpanel__down rpdown">
+              <div class="rightpanel__title" id="language">languages</div>
+              <div class="rightpanel__content">
+                <ul class="rpdown__list">
+                  <li class="rightpanel__item">
+                    <div class="rpdown__level">A1</div>
+                    <div class="rpdown__name">English</div>
+                  </li>
+                  <li class="rightpanel__item">
+                    <div class="rpdown__level">C1</div>
+                    <div class="rpdown__name">Russian</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__skills skills">
+          <div class="skills__container">
+            <div class="skills__titleblock titleblock" id="skill">
+              <h2 class="titleblock__text">skills</h2>
+              <div class="titleblock__ceil">
+                <div class="titleblock__decor"></div>
+              </div>
+            </div>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <div class="skills__image">
+                  <img src="img/skills/svg/figma.svg" alt="figma" title="figma" width="28" height="42">
+                </div>
+                <div class="skills__progressbar">
+                  <div class="skills__progress skills__progress_70"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__image">
+                  <img src="img/skills/svg/html5.svg" alt="html5" title="html5" width="34" height="38">
+                </div>
+                <div class="skills__progressbar">
+                  <div class="skills__progress skills__progress_50"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__image">
+                  <img src="img/skills/svg/css3.svg" alt="css3" title="css3" width="34" height="38">
+                </div>
+                <div class="skills__progressbar">
+                  <div class="skills__progress skills__progress_30"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__image">
+                  <img src="img/skills/svg/scss.svg" alt="sass" title="sass" width="40" height="40">
+                </div>
+                <div class="skills__progressbar">
+                  <div class="skills__progress skills__progress_20"></div>
+                </div>
+              </li>
+              <li class="skills__item">
+                <div class="skills__image">
+                  <img src="img/skills/svg/git.svg" alt="git" title="git" width="40" height="40">
+                </div>
+                <div class="skills__progressbar">
+                  <div class="skills__progress skills__progress_10"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__code code">
+          <div class="code__container">
+            <div class="code__titleblock titleblock" id="code">
+              <h2 class="titleblock__text">code example</h2>
+              <div class="titleblock__ceil">
+                <div class="titleblock__decor"></div>
+              </div>
+            </div>
+            <ol class="code_listcolors col">
+              <li>
+                <span class="col__pink">function</span> reverseText<span class="col__orange">(</span><span class="col__red">str</span><span class="col__orange">) {</span>
+              </li>
+              <li>
+                &nbsp;&nbsp;<span class="col__pink">return</span> <span class="col__red">str</span><span class="col__gray">.</span>split<span class="col__pink">(</span><span class="col__green">''</span><span class="col__pink">)</span><span class="col__gray">.</span>reverse<span class="col__pink">()</span><span class="col__gray">.</span>join<span class="col__pink">(</span><span class="col__green">''</span><span class="col__pink">)</span><span class="col__gray">;</span>
+              </li>
+              <li>
+                <span class="col__orange">}</span>
+              </li>
+              <li>
+                <span class="col__orange">console</span><span class="col__gray">.</span>log<span class="col__orange">(</span>reverseText<span class="col__pink">(</span><span class="col__green">'</span><span class="col__green col__textprint">Nothing is impossible</span><span class="col__gray">|</span><span class="col__green">'</span><span class="col__pink">)</span><span class="col__orange">)</span><span class="col__gray">;</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="main__projects projects">
+          <div class="projects__container">
+            <div class="projects__titleblock titleblock" id="project">
+              <h2 class="titleblock__text">my project</h2>
+              <div class="titleblock__ceil">
+                <div class="titleblock__decor"></div>
+              </div>
+            </div>
+            <div class="projects__body">
+              <a class="projects__link" href="https://github.com/A1exFox/relvise" target="_blank">
+                <img src="img/projects/relvise.jpg" alt="relvise" width="250" height="190">
+                relvise
+              </a>
+              <a class="projects__link" href="https://github.com/A1exFox/gocorona" target="_blank">
+                <img src="img/projects/gocorona.jpg" alt="gocorona" width="250" height="190">
+                gocorona
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer footer__block">
+        <div class="footer__container">
+          <div class="footer__github">
+            <a href="https://github.com/A1exFox" target="_blank">
+              <img src="img/footer/svg/github.svg" alt="github" width="50" height="50">
+            </a>
+          </div>
+          <div class="footer__year">2022</div>
+          <div class="footer__rsschool">
+            <a href="https://rs.school/js/" target="_blank">
+              <img src="img/footer/svg/rs_school_js.svg" alt="rsschool" width="134" height="50">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>
